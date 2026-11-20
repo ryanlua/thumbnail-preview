@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build plugin",
+      "type": "shell",
+      "command": "rojo build --plugin ThumbnailPreview.rbxm",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Build model",
+      "type": "shell",
+      "command": "rojo build --output ThumbnailPreview.rbxm && rojo build --output ThumbnailPreview.rbxmx",
+      "windows": {
+        "command": "rojo build --output ThumbnailPreview.rbxm; rojo build --output ThumbnailPreview.rbxmx"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build"
+      }
+    }
+  ]
+}
