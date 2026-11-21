@@ -4,7 +4,7 @@ assert(plugin, "This script must be run as a plugin")
 
 const toolbar = plugin:CreateToolbar("Thumbnail Preview")
 const button =
-	toolbar:CreateButton("Preview", "Preview the thumbnail camera", "rbxasset://textures/ui/TopBar/inventoryOn.png")
+	toolbar:CreateButton("Preview", "Preview the thumbnail camera viewport", "rbxassetid://75679223158785")
 button.ClickableWhenViewportHidden = true
 
 const widgetInfo = DockWidgetPluginGuiInfo.new(Enum.InitialDockState.Left, false, false, 200, 300, 150, 150)
